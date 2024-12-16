@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Freshwater Fish Collection - Aquatic Fish Shop</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      scroll-behavior: smooth;
+    }
+    .navbar-brand {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      padding: 20px 0;
+    }
+    .modal-content input, .modal-content textarea {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Aquatic Fish Shop</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html#about">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#categories">Fish Categories</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Freshwater Fish Collection Section -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="text-center">Freshwater Fish Collection</h2>
+      <p class="text-center">Browse our extensive collection of freshwater fish, complete with prices and options to buy online.</p>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="https://www.liveaquaria.com/images/categories/large/lg_89710_Crowntail_Betta_Red.jpg" class="card-img-top" alt="Betta Fish">
+            <div class="card-body">
+              <h5 class="card-title">Betta Fish</h5>
+              <p class="card-text">Known for their vibrant colors and flowing fins, Betta Fish are a popular choice for freshwater aquariums.</p>
+              <p><strong>Price:</strong> ₹848.00</p>
+              <button class="btn btn-primary" onclick="location.href='buy.html?fish=Betta Fish&price=840'">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="https://www.liveaquaria.com/images/categories/product/P_89721_Crown_Pearlscale_Goldfish.jpg" class="card-img-top" alt="Goldfish">
+            <div class="card-body">
+              <h5 class="card-title">Goldfish</h5>
+              <p class="card-text">A classic choice for beginners and experienced hobbyists alike.</p>
+              <p><strong>Price:</strong> ₹420.00</p>
+              <button class="btn btn-primary" onclick="location.href='buy.html?fish=Goldfish&price=420'">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="https://www.liveaquaria.com/images/categories/product/lg_89958_Neon_Tetra_Jumbo_10_12.jpg" class="card-img-top" alt="Tetras">
+            <div class="card-body">
+              <h5 class="card-title">Tetras</h5>
+              <p class="card-text">Small and colorful, Tetras are perfect for community tanks.</p>
+              <p><strong>Price:</strong> ₹ 680.00</p>
+              <button class="btn btn-primary" onclick="location.href='buy.html?fish=Tetras&price=680'">Buy Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="https://www.liveaquaria.com/images/categories/product/p89585YellowMarlboroDiscus.jpg" class="card-img-top" alt="Guppies">
+            <div class="card-body">
+              <h5 class="card-title">Discus</h5>
+              <p class="card-text">Discus originate in the mixed tropical waters of the Brazilian Amazon River of South America</p>
+              <p><strong>Price:</strong> ₹ 260.00 each</p>
+              <button class="btn btn-primary" onclick="location.href='buy.html?fish=Discus&price=260'">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="https://www.liveaquaria.com/images/categories/large/lg_Black_Convict_Cichlid_89945.jpg" class="card-img-top" alt="Cichlids">
+            <div class="card-body">
+              <h5 class="card-title">Cichlids</h5>
+              <p class="card-text">Vibrant and active fish, perfect for larger tanks.</p>
+              <p><strong>Price:</strong> ₹ 1280.00</p>
+              <button class="btn btn-primary" onclick="location.href='buy.html?fish=Cichlids&price=1280'">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="https://www.liveaquaria.com/images/categories/product/lg_112533_Sunray_Guppy_male.jpg" class="card-img-top" alt="Catfish">
+            <div class="card-body">
+              <h5 class="card-title">Fancy Guppies</h5>
+              <p class="card-text">These hardy colorful guppy fish add excitement and brilliance to the passive community aquarium</p>
+              <p><strong>Price:</strong> ₹1020.00</p>
+              <button class="btn btn-primary buy-btn" onclick="location.href='buy.html?fish=Fancy Guppies&price=1020'">Buy Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Buy Now Modal -->
+  <div class="modal fade" id="buyModal" tabindex="-1" aria-labelledby="buyModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="buyModalLabel">Buy Now</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form id="orderForm">
+            <div class="mb-3">
+              <label for="customerName" class="form-label">Name</label>
+              <input type="text" class="form-control" id="customerName" required>
+            </div>
+            <div class="mb-3">
+              <label for="customerNumber" class="form-label">Phone Number</label>
+              <input type="text" class="form-control" id="customerNumber" required>
+            </div>
+            <div class="mb-3">
+              <label for="customerEmail" class="form-label">Email</label>
+              <input type="email" class="form-control" id="customerEmail" required>
+            </div>
+            <div class="mb-3">
+              <label for="customerAddress" class="form-label">Address</label>
+              <textarea class="form-control" id="customerAddress" rows="3" required></textarea>
+            </div>
+            <div class="mb-3">
+              <label for="fishQuantity" class="form-label">Quantity</label>
+              <input type="number" class="form-control" id="fishQuantity" min="1" value="1" required>
+            </div>
+            <p><strong>Total Cost:</strong> ₹<span id="totalCost">0.00</span></p>
+            <button type="submit" class="btn btn-success">Submit Order</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="text-center">
+    <p>&copy; 2024 Aquatic Fish Shop. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const buyButtons = document.querySelectorAll('.buy-btn');
+    const buyModal = new bootstrap.Modal(document.getElementById('buyModal'));
+    const orderForm = document.getElementById('orderForm');
+    let selectedFish = '';
+    let fishPrice = 0;
+
+    buyButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        selectedFish = button.getAttribute('data-fish');
+        fishPrice = parseFloat(button.getAttribute('data-price'));
+        document.getElementById('fishQuantity').value = 1;
+        updateTotalCost();
+        buyModal.show();
+      });
+    });
+
+    document.getElementById('fishQuantity').addEventListener('input', updateTotalCost);
+
+    function updateTotalCost() {
+      const quantity = parseInt(document.getElementById('fishQuantity').value) || 1;
+      document.getElementById('totalCost').innerText = (fishPrice * quantity).toFixed(2);
+    }
+
+    orderForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      alert(`Thank you for your order of ${selectedFish}! Your order has been successfully placed.`);
+      buyModal.hide();
+      orderForm.reset();
+      document.getElementById('totalCost').innerText = '0.00';
+    });
+  </script>
+</body>
+</html>
